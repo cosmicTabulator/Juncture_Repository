@@ -219,7 +219,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -937734413
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 828270a677dad4bd48638e3811dbfa81, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1f651440e5c374ddea4f3a9368934750, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -360,7 +360,7 @@ Prefab:
     - target: {fileID: 9535036, guid: b3d7aed06ca804bbaa8ff93ba1c887d7, type: 2}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: af448c6e294ee4fd2ae2f2b51d9279e9, type: 2}
+      objectReference: {fileID: 9100000, guid: 0dd250d29f84141e7aa2e4bc6bc28484, type: 2}
     - target: {fileID: 11487326, guid: b3d7aed06ca804bbaa8ff93ba1c887d7, type: 2}
       propertyPath: upper
       value: 3
@@ -423,7 +423,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -937734413
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1e6a36069e2f442cb881b70d49591bb8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 85789d9673e3e44f6863be4136be0aa6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
