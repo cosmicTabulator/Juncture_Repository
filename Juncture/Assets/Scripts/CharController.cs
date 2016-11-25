@@ -7,6 +7,12 @@ public class CharController : MonoBehaviour {
 
 		Rigidbody2D body;
 
+		Vector2 dir;
+
+		Vector2 pos;
+
+		Transform trans;
+
 		System.Random r = new System.Random();
 		int start;
 		int current;
@@ -14,6 +20,7 @@ public class CharController : MonoBehaviour {
 		bool running;
 		int diff;
 		int state;
+		int facing;
 		int level;
 		int i;
 		int upper;
@@ -29,6 +36,8 @@ public class CharController : MonoBehaviour {
 				anim = GetComponent<Animator> ();
 
 				body = GetComponent<Rigidbody2D> ();
+
+				trans = GetComponent<Transform> ();
 
 				upper = levels.Length;
 				level = orgin;
@@ -53,6 +62,7 @@ public class CharController : MonoBehaviour {
 		if (y < 0) {
 			anim.SetBool ("MoveDown", true);
 			anim.SetInteger ("Facing", 0);
+			facing = 0;
 		} else {
 			anim.SetBool ("MoveDown", false);	
 		}
@@ -60,6 +70,7 @@ public class CharController : MonoBehaviour {
 		if (y > 0) {
 			anim.SetBool("MoveUp", true);
 			anim.SetInteger ("Facing", 2);
+			facing = 2;
 		}else {
 			anim.SetBool ("MoveUp", false);	
 		}
@@ -67,6 +78,7 @@ public class CharController : MonoBehaviour {
 		if (x > 0) {
 			anim.SetBool("MoveRight", true);
 			anim.SetInteger ("Facing", 3);
+			facing = 3;
 		}else {
 			anim.SetBool ("MoveRight", false);	
 		}
@@ -74,6 +86,7 @@ public class CharController : MonoBehaviour {
 		if (x < 0) {
 			anim.SetBool("MoveLeft", true);
 			anim.SetInteger ("Facing", 1);
+			facing = 1;
 		}else {
 			anim.SetBool ("MoveLeft", false);	
 		}
@@ -90,7 +103,34 @@ public class CharController : MonoBehaviour {
 		Vector2 v = new Vector2(x,y);
 		body.velocity = v * factor;
 
+				if (facing == 0) {
+						dir = Vector2.down;
+						pos = new Vector2 (trans.position.x, trans.position.y - 1.25f);
+				}
+				if (facing == 1) {
+						dir = Vector2.left;
+						pos = trans.position;
+				}
+				if (facing == 2) {
+						dir = Vector2.up;
+						pos = new Vector2 (trans.position.x, trans.position.y - 0.7f);
+				}
+				if (facing == 3) {
+						dir = Vector2.right;
+						pos = trans.position;
+				}
 
+				RaycastHit2D hit = Physics2D.Raycast (pos, dir, 1f);
+				if (hit.collider != null) {
+						if (Input.GetKeyDown (KeyCode.F)) {
+								GameObject wanted = hit.collider.gameObject;
+								wanted.SendMessage ("Interact");
+								print (wanted.name);
+						}
+
+
+				}
+				Debug.DrawRay (pos, dir);
 
 		if(mov == false){
 			if (running) {
@@ -156,14 +196,17 @@ public class CharController : MonoBehaviour {
 				print ("Level" + level);
 				switch (level) {
 
-				case 11:
+				case 00:
 						//anim.runtimeAnimatorController = Resources.Load ("Textures/Sprites/Entities/Char/C1_Char/C1_L1_Char/Char1_Light1") as RuntimeAnimatorController;	
 						break;
-				case 12:
-						//anim.runtimeAnimatorController = Resources.Load ("Textures/Sprites/Entities/Char/C1_Char/C1_L2_Char/Char1_Light2") as RuntimeAnimatorController;
+				case 01:
+						anim.runtimeAnimatorController = Resources.Load ("Textures/Sprites/Entities/Char/C0Char/L1/Char0_Light1") as RuntimeAnimatorController;
 						break;
-				case 21:
+				case 10:
 						//anim.runtimeAnimatorController = Resources.Load ("Textures/Sprites/Entities/Char/C2_Char/C2_L1_Char/Char2_Light1") as RuntimeAnimatorController;
+						break;
+				case 11:
+						anim.runtimeAnimatorController = Resources.Load ("Textures/Sprites/Entities/Char/C1Char/L1/Char1_Light1") as RuntimeAnimatorController;
 						break;
 				}
 

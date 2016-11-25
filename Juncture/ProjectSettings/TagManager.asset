@@ -45,6 +45,12 @@ TagManager:
   - name: Shadow
     uniqueID: 224775797
     locked: 0
+  - name: BelowChar
+    uniqueID: 2456754943
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: AboveChar
+    uniqueID: 2913505401
     locked: 0
