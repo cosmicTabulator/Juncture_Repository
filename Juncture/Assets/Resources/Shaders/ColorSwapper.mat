@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: New Material
+  m_Name: ColorSwapper
   m_Shader: {fileID: 4800000, guid: dd5ecce6d1d5940b2b5da1df1b48a9dc, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -138,17 +138,17 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _ColorB
-        second: {r: 0.909804, g: 0.45882356, b: 0.2901961, a: 0}
-      data:
-        first:
-          name: _ColorD
-        second: {r: 0.45882356, g: 0.08235294, b: 0.20392159, a: 0}
-      data:
-        first:
           name: _ColorA
         second: {r: 0.9607844, g: 0.80392164, b: 0.4156863, a: 0}
       data:
         first:
+          name: _ColorB
+        second: {r: 0.909804, g: 0.45882356, b: 0.2901961, a: 0}
+      data:
+        first:
           name: _ColorC
         second: {r: 0.87843144, g: 0.17254902, b: 0.22352943, a: 0}
+      data:
+        first:
+          name: _ColorD
+        second: {r: 0.45882356, g: 0.08235294, b: 0.20392159, a: 0}
