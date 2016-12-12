@@ -49,3 +49,7 @@
 /Users/grahamcooke/Desktop/Juncture_Repository/Juncture/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/grahamcooke/Desktop/Juncture_Repository/Juncture/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/grahamcooke/Desktop/Juncture_Repository/Juncture/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/grahamcooke/Desktop/Juncture_Repository/Juncture/Temp/bin/Debug/UnityEngine.PlaymodeTestsRunner.dll
+/Users/grahamcooke/Desktop/Juncture_Repository/Juncture/Temp/bin/Debug/UnityEngine.Analytics.dll
+/Users/grahamcooke/Desktop/Juncture_Repository/Juncture/Temp/bin/Debug/UnityEngine.HoloLens.dll
+/Users/grahamcooke/Desktop/Juncture_Repository/Juncture/Temp/bin/Debug/UnityEngine.VR.dll

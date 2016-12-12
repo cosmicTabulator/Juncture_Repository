@@ -41,6 +41,8 @@ public class CharController : MonoBehaviour {
 
 				upper = levels.Length;
 				level = orgin;
+				print (upper);
+				print ("level" + level);
 
 				//body.freezeRotation = true;
 	
@@ -178,6 +180,10 @@ public class CharController : MonoBehaviour {
 
 		}
 		if (Input.GetKeyDown(KeyCode.E)) {
+				
+						print ("i" + i);
+						print ("i" + (i + 1));
+						print ("upper" + upper);
 
 				if(i+1 < upper){
 						i++;
