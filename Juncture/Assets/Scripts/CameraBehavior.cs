@@ -9,15 +9,14 @@ public class CameraBehavior : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 	
-				c = GetComponent<Camera> ();
-				s = Resources.Load ("Shaders/Color Swapper") as Shader;
+//				c = GetComponent<Camera> ();
+//				s = Resources.Load ("Shaders/Color Swapper") as Shader;
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
-				c.RenderWithShader(s,"");
 
 	}
 }
