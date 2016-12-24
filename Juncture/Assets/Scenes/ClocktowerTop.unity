@@ -385,6 +385,7 @@ MonoBehaviour:
   scene: ClockTowerBalcony
   xDisp: -6.25
   yDisp: -3.25
+  facing: 1
 --- !u!61 &372370771
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -668,6 +669,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9549862, guid: b3d7aed06ca804bbaa8ff93ba1c887d7, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 0dd250d29f84141e7aa2e4bc6bc28484, type: 2}
+    - target: {fileID: 9549862, guid: b3d7aed06ca804bbaa8ff93ba1c887d7, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3d7aed06ca804bbaa8ff93ba1c887d7, type: 2}
   m_IsPrefabParent: 0
@@ -715,6 +724,7 @@ MonoBehaviour:
   scene: ClocktowerBalcony
   xDisp: 6.25
   yDisp: -3.25
+  facing: 3
 --- !u!61 &1811504112
 BoxCollider2D:
   m_ObjectHideFlags: 0

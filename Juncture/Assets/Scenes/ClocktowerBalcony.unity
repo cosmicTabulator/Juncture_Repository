@@ -122,6 +122,7 @@ MonoBehaviour:
   scene: ClocktowerTop
   xDisp: 4.25
   yDisp: -4.25
+  facing: 1
 --- !u!61 &26077093
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -233,6 +234,7 @@ MonoBehaviour:
   scene: ClocktowerTop
   xDisp: -4.25
   yDisp: -4.25
+  facing: 3
 --- !u!61 &1192172762
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -407,6 +409,18 @@ Prefab:
     - target: {fileID: 114955690308750316, guid: b3d7aed06ca804bbaa8ff93ba1c887d7,
         type: 2}
       propertyPath: levels.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2055062, guid: b3d7aed06ca804bbaa8ff93ba1c887d7, type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2055062, guid: b3d7aed06ca804bbaa8ff93ba1c887d7, type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2055062, guid: b3d7aed06ca804bbaa8ff93ba1c887d7, type: 2}
+      propertyPath: m_BackGroundColor.b
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
